@@ -9,6 +9,8 @@ const count = ref(0)
 </script>
 
 <template>
+  <n-icon size="40">
+  </n-icon>
   <h1>{{ msg }}</h1>
 
   <p>
@@ -32,6 +34,8 @@ const count = ref(0)
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
 </template>
+<script>
+</script>
 
 <style scoped>
 a {

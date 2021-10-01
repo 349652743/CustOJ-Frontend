@@ -1,8 +1,7 @@
 <template>
   <div class="home">
     <n-card>
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" width="600" src="../assets/logo.jpg">
     </n-card>
   </div>
 </template>
