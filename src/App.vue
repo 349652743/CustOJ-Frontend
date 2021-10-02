@@ -4,9 +4,14 @@
       <nav-bar>
       </nav-bar>
     </n-layout-header>
-    <n-layout-content content-style="padding: 24px;">
+    <n-layout-content content-style="padding: 18px 80px;">
         <router-view/>
     </n-layout-content>
+    <n-layout-footer>
+      长春理工大学在线评测系统
+      <br>
+      Powered by OnlineJudge   Version: 0.0.1
+    </n-layout-footer>
   </n-layout>
 </template>
 <script>

@@ -11,8 +11,8 @@
     </n-grid-item >
     <n-grid-item :span="1" class="nav-right-item" >
       <n-space style="width: 80%;" justify="end">
-          <n-button>登陆</n-button>
-          <n-button>注册</n-button>
+          <n-button @click="onClickLoginButton">登陆</n-button>
+          <n-button @click="onClickRegisterButton">注册</n-button>
         </n-space>
     </n-grid-item>
   </n-grid>
@@ -107,6 +107,14 @@ export default {
             activeKey: null,
             menuOptions: menuOptions
         }
+    },
+    methods: {
+      onClickRegisterButton() {
+        this.$router.push({name: 'Register'})
+      },
+      onClickLoginButton() {
+        this.$router.push({name: 'Login'})
+      }
     }
 }
 </script>

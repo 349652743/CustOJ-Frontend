@@ -1,8 +1,14 @@
 <template>
   <div class="home">
-    <n-card>
-    <img alt="Vue logo" width="600" src="../assets/logo.jpg">
-    </n-card>
+    <!-- <n-space :size="20" justify="center"> -->
+      <!-- <n-card style="width: 900px; height: 500px;"> -->
+      <!-- <HelloWorld></HelloWorld> -->
+      <!-- </n-card> -->
+      <n-card style="height: 500px;">
+      <HelloWorld></HelloWorld>
+      </n-card>
+    <!-- </n-space> -->
+    
   </div>
 </template>
 
