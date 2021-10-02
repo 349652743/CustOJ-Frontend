@@ -52,7 +52,7 @@ const menuOptions = [
     label: () =>
       h(
         RouterLink,
-        { to:"/about" },
+        { to:"/problem" },
         '题库'
       ),
     key: 'Problem',
