@@ -1,14 +1,13 @@
 <template>
   <div class="home">
     <!-- <n-space :size="20" justify="center"> -->
-      <!-- <n-card style="width: 900px; height: 500px;"> -->
-      <!-- <HelloWorld></HelloWorld> -->
-      <!-- </n-card> -->
-      <n-card style="height: 500px;">
+    <!-- <n-card style="width: 900px; height: 500px;"> -->
+    <!-- <HelloWorld></HelloWorld> -->
+    <!-- </n-card> -->
+    <n-card style="height: 500px;">
       <HelloWorld></HelloWorld>
-      </n-card>
+    </n-card>
     <!-- </n-space> -->
-    
   </div>
 </template>
 

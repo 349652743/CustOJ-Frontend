@@ -7,17 +7,17 @@
           <search-box></search-box>
         </n-grid-item>
         </n-grid>
-        <common-table class="table"></common-table>
+        <problem-table class="table"></problem-table>
       </n-space>
     </n-card>
   </div>
 </template>
 <script>
-import CommonTable from "@/components/CommonTable.vue"
+import ProblemTable from "@/components/ProblemTable.vue"
 import SearchBox from "@/components/SearchBox.vue"
 export default {
   components: {
-    CommonTable,
+    ProblemTable,
     SearchBox
   }
 }

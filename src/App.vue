@@ -1,18 +1,18 @@
 <template>
-  <n-layout embedded style="height: 100%;">
-    <n-layout-header bordered style="height: 64px;">
-      <nav-bar>
-      </nav-bar>
-    </n-layout-header>
-    <n-layout-content content-style="padding: 18px 80px;">
-        <router-view/>
-    </n-layout-content>
-    <n-layout-footer>
-      长春理工大学在线评测系统
-      <br>
-      Powered by OnlineJudge   Version: 0.0.1
-    </n-layout-footer>
-  </n-layout>
+  <n-message-provider>
+    <n-layout embedded style="height: 100%;">
+      <n-layout-header bordered style="height: 64px;">
+        <nav-bar></nav-bar>
+      </n-layout-header>
+      <n-layout-content content-style="padding: 18px 80px;">
+        <router-view />
+      </n-layout-content>
+      <n-layout-footer>
+        长春理工大学在线评测系统
+        <br />Powered by OnlineJudge Version: 0.0.1
+      </n-layout-footer>
+    </n-layout>
+  </n-message-provider>
 </template>
 <script>
 import NavBar from "./components/NavBar.vue"
@@ -23,7 +23,8 @@ export default {
 }
 </script>
 <style>
-html,body {
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -40,10 +41,7 @@ html,body {
   padding: 0;
 }
 
-
 .n-layout-content {
   background-color: transparent;
 }
-
-
 </style>
