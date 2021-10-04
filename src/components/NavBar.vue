@@ -55,7 +55,7 @@ const menuOptions = [
     label: () =>
       h(
         RouterLink,
-        { to: "/problem" },
+        { to: "/problems" },
         '题库'
       ),
     key: 'Problem',
@@ -65,7 +65,7 @@ const menuOptions = [
     label: () =>
       h(
         RouterLink,
-        { to: "/about" },
+        { to: "/contests" },
         '比赛'
       ),
     key: 'Contest',
