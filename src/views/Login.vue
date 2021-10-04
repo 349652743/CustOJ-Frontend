@@ -16,8 +16,13 @@
           <n-space vertical style="width: 100%" :size="20">
             <n-button style="width: 100%" type="success">登陆账号</n-button>
             <n-grid x-gap="12" :cols="2">
-              <n-gi style="text-align: left;">还没有账号？ 马上注册 👉</n-gi>
-              <n-gi style="text-align: right;">忘记密码？</n-gi>
+              <n-gi style="text-align: left;">
+                还没有账号？
+                <router-link to="/Register" >
+                  <n-a :href="href">立即注册</n-a>
+                </router-link>
+                &nbsp;👉
+              </n-gi>
             </n-grid>
           </n-space>
         </n-form-item>
