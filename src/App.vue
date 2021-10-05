@@ -15,12 +15,14 @@
   </n-message-provider>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import NavBar from "./components/NavBar.vue"
-export default {
+export default defineComponent( {
   components: {
     NavBar
   }
 }
+)
 </script>
 <style>
 html,

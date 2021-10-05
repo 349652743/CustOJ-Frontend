@@ -18,16 +18,17 @@
     </n-card>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import SearchBox from "@/components/common/SearchBox.vue"
 import TextSelector from "@/components/common/TextSelector.vue"
 import ContestList from "@/components/contests/ContestList.vue"
-export default {
+export default defineComponent( {
     components: {
         ContestList,
         TextSelector,
         SearchBox
     }
-}
+})
 
 </script>
 <style>

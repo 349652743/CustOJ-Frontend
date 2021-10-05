@@ -6,8 +6,9 @@
 
 
 <script>
+import { defineComponent } from 'vue'
 import { ref } from 'vue'
-export default {
+export default defineComponent( {
   data() {
     return {
       value: ref(null),
@@ -31,5 +32,5 @@ export default {
       ]
     }
   }
-}
+})
 </script>

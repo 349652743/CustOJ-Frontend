@@ -12,10 +12,11 @@
 </template>
 
 <script>
+import { defineComponent } from 'vue'
 import { ref } from 'vue'
 import { CaretDown } from "@vicons/ionicons5"
 
-export default {
+export default defineComponent({
     props: {
         title: String
     },
@@ -42,5 +43,5 @@ export default {
             ]
         }
     }
-}
+})
 </script>

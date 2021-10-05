@@ -4,12 +4,13 @@
     </n-list>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import ContestListItem from "@/components/contests/ContestListItem.vue"
-export default {
+export default defineComponent({
     components: {
         ContestListItem
     }
-}
+})
 </script>
 <style>
 .contest-list {

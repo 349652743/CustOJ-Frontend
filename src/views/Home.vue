@@ -29,13 +29,14 @@
 
 <script>
 // @ is an alias to /src
+import { defineComponent } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 import HomeBannerBox from '@/components/home/HomeBannerBox.vue'
 import HomeNoticeBox from '@/components/home/HomeNoticeBox.vue'
 import HomeRankBox from '@/components/home/HomeRankBox.vue'
 import HomeContestBox from '@/components/home/HomeContestBox.vue'
 
-export default {
+export default defineComponent( {
   name: 'Home',
   components: {
     HelloWorld,
@@ -44,7 +45,7 @@ export default {
     HomeRankBox,
     HomeContestBox
   }
-}
+})
 </script>
 
 

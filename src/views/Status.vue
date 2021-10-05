@@ -22,16 +22,17 @@
     </n-card>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import SearchBox from "@/components/common/SearchBox.vue"
 import TextSelector from "@/components/common/TextSelector.vue"
 import StatusTable from "@/components/status/StatusTable.vue"
-export default {
+export default defineComponent( {
     components: {
         StatusTable,
         TextSelector,
         SearchBox
     }
-}
+})
 
 </script>
 <style>

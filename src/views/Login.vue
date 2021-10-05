@@ -31,9 +31,10 @@
   </div>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
+export default defineComponent( {
   name: "Login",
   data() {
     return {
@@ -44,7 +45,7 @@ export default {
       }
     }
   }
-}
+})
 </script>
 <style>
 .login {

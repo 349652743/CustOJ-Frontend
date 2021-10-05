@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { h } from 'vue'
+import { h, defineComponent } from 'vue'
 import { NTag, NButton, useMessage } from 'naive-ui'
 
 const createColumns = ({ sendMail }) => {
@@ -85,7 +85,7 @@ const createData = () => [
 ]
 const message = useMessage()
 
-export default {
+export default defineComponent( {
   data() {
     return {
       data: createData(),
@@ -101,5 +101,5 @@ export default {
   },
   methods: {
   }
-}
+})
 </script>

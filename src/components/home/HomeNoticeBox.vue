@@ -23,13 +23,14 @@
   
 </template>
 <script>
-export default {
+import { defineComponent } from 'vue'
+export default defineComponent ({
   data() {
     return {
       page: 10
     }
   }
-}
+})
 </script>
 <style>
 .home-notice-pagination {

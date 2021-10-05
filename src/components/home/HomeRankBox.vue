@@ -75,7 +75,7 @@ const createData = () => [
 ]
 const message = useMessage()
 
-export default {
+export default defineComponent({
   data () {
     return {
       data: createData(),
@@ -89,5 +89,5 @@ export default {
       }
     }
   }
-}
+})
 </script>

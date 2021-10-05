@@ -30,19 +30,20 @@
   </div>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import SearchBox from "@/components/common/SearchBox.vue"
 import TextSelector from "@/components/common/TextSelector.vue"
 import ProblemTable from "@/components/ProblemTable.vue"
 import TagSelector from "@/components/TagSelector.vue"
 
-export default {
+export default defineComponent( {
   components: {
     ProblemTable,
     SearchBox,
     TagSelector,
     TextSelector
   }
-}
+})
 </script>
 <style>
 .table {

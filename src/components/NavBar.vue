@@ -23,6 +23,7 @@
   </n-grid>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import { h, resolveComponent } from 'vue'
 import { RouterLink } from 'vue-router'
 import { NIcon } from 'naive-ui'
@@ -103,7 +104,7 @@ const menuOptions = [
 ]
 
 
-export default {
+export default defineComponent( {
   name: "NavBar",
   data() {
     return {
@@ -119,7 +120,7 @@ export default {
       this.$router.push({ name: 'Login' })
     }
   }
-}
+})
 </script>
 <style>
 .nav-left-item {

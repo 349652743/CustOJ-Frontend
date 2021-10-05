@@ -17,13 +17,14 @@
     </n-list-item>
 </template>
 <script>
+import { defineComponent } from 'vue'
 import {
     Ellipse as EllipseIcon
 } from "@vicons/ionicons5"
 
-export default {
+export default defineComponent({
     components: {
         EllipseIcon
     }
-}
+})
 </script>
