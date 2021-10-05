@@ -28,7 +28,7 @@ export default {
             options: [
                 {
                     label: '初级',
-                    value: 'easy'
+                    value: 'yong'
                 },
                 {
                     label: '中级',

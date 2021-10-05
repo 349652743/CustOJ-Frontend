@@ -1,5 +1,5 @@
 <template>
-    <n-list>
+    <n-list class="contest-list">
         <contest-list-item v-for="i in 5"></contest-list-item>
     </n-list>
 </template>
@@ -11,3 +11,8 @@ export default {
     }
 }
 </script>
+<style>
+.contest-list {
+    margin: 0px;
+}
+</style>

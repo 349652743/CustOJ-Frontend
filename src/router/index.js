@@ -31,7 +31,12 @@ const routes = [
     path: '/contests',
     name: 'Contests',
     component: () => import('@/views/Contests.vue')
-  }
+  },
+  {
+    path: '/status',
+    name: 'Status',
+    component: () => import('@/views/Status.vue')
+  },
 ]
 
 const router = createRouter({

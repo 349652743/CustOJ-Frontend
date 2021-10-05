@@ -75,7 +75,7 @@ const menuOptions = [
     label: () =>
       h(
         RouterLink,
-        { to: "/about" },
+        { to: "/status" },
         '评测'
       ),
     key: 'evaluation',
