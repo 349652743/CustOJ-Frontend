@@ -1,5 +1,5 @@
 <template>
-  <div class="problem">
+  <div class="problem" key="problem">
     <n-card>
       <div style="text-align: left;">
         <n-h2 style="margin-bottom: 20px;">题目列表</n-h2>

@@ -3,7 +3,9 @@
   <div class="register" style="padding: 80px 0px;">
     <n-card style="width: 30%">
       <n-form :model="model" ref="formRef" :rules="rules">
-        <n-h2>注册 - Cust OJ</n-h2>
+        <div class="register-header">
+          <n-h2>注册 - Cust OJ</n-h2>
+        </div>
         <n-form-item path="username" label="账号">
           <n-input v-model:value="model.username" />
         </n-form-item>
@@ -27,7 +29,7 @@
 <script>
 import { defineComponent } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue'
-export default  defineComponent ({
+export default defineComponent({
   name: "Login",
   data() {
     return {
@@ -45,5 +47,12 @@ export default  defineComponent ({
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.register-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 </style>

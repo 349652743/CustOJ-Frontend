@@ -23,8 +23,7 @@
   </n-grid>
 </template>
 <script>
-import { defineComponent } from 'vue'
-import { h, resolveComponent } from 'vue'
+import { h, defineComponent } from 'vue'
 import { RouterLink } from 'vue-router'
 import { NIcon } from 'naive-ui'
 import {

@@ -2,7 +2,10 @@
   <div class="login" style="padding: 80px 0px;">
     <n-card style="width: 30%">
       <n-form :model="model" ref="formRef" :rules="rules">
-        <n-h2>登陆 - Cust OJ</n-h2>
+        <div class="login-header">
+          <n-h2>登陆 - Cust OJ</n-h2>
+        </div>
+
         <n-form-item path="username" label="账号">
           <n-input v-model:value="model.username" />
         </n-form-item>
@@ -18,10 +21,9 @@
             <n-grid x-gap="12" :cols="2">
               <n-gi style="text-align: left;">
                 还没有账号？
-                <router-link to="/Register" >
+                <router-link to="/Register">
                   <n-a :href="href">立即注册</n-a>
-                </router-link>
-                &nbsp;👉
+                </router-link>&nbsp;👉
               </n-gi>
             </n-grid>
           </n-space>
@@ -34,7 +36,7 @@
 import { defineComponent } from 'vue'
 import HelloWorld from '@/components/HelloWorld.vue'
 
-export default defineComponent( {
+export default defineComponent({
   name: "Login",
   data() {
     return {
@@ -52,5 +54,12 @@ export default defineComponent( {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 </style>

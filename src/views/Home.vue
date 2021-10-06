@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="home" key="home">
     <n-grid y-gap="12" x-gap="12" :cols="24">
       <n-gi span="14">
         <n-space vertical>

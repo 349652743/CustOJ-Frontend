@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '@/views/Home.vue'
 
 const routes = [
   {
@@ -37,6 +37,11 @@ const routes = [
     name: 'Status',
     component: () => import('@/views/Status.vue')
   },
+  {
+    path: '/contest/:id',
+    name: 'Contest',
+    component: () => import('@/views/Contest.vue')
+  }
 ]
 
 const router = createRouter({
