@@ -5,14 +5,14 @@
         <n-h2 style="margin-bottom: 20px;">题目列表</n-h2>
       </div>
       <n-space vertical :size="15">
-        <n-grid :col="24" x-gap="20">
-          <n-grid-item span="4">
+        <n-grid cols="2 800:24" x-gap="0 800:20" item-responsive>
+          <n-grid-item span="1 800:4">
             <search-box></search-box>
           </n-grid-item>
-          <n-grid-item :offset="10" span="4">
+          <n-grid-item offset="0 800:10" span="0 800:4">
             <tag-selector></tag-selector>
           </n-grid-item>
-          <n-grid-item span="6">
+          <n-grid-item span="0 800:6">
             <n-space :size="20" style="display: flex;align-items: center;">
               <n-switch style="margin: 0px;">
                 <template #checked>Tag</template>

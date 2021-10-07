@@ -17,7 +17,7 @@
     </n-list-item>
   </n-list>
   <div class="home-notice-pagination">
-  <n-pagination v-model:page="page" :page-count="100"/>
+  <n-pagination v-model:page="page" :page-count="100" :page-slot="5"/>
   </div>
 </template>
 <script>

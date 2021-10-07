@@ -1,8 +1,8 @@
 <template>
   <n-grid :cols="4" style="height: 100%;" item-responsive>
-    <n-grid-item span="4 800:1" class="nav-left-item">
+    <n-grid-item span="3 800:1" class="nav-left-item">
       <n-space style="width: 80%;">
-        <n-h2 style="margin: 0px;">长春理工大学在线评测系统</n-h2>
+        <n-h2 style="margin: 0px;">Cust OJ</n-h2>
       </n-space>
     </n-grid-item>
     <n-grid-item span="0 800:2" class="nav-middle-item">
@@ -20,7 +20,19 @@
         <n-button @click="onClickRegisterButton">注册</n-button>
       </n-space>
     </n-grid-item>
+    <n-grid-item span="1 800:0" class="nav-right-item">
+      <n-space style="width: 70%;" justify="end">
+        <n-button text @click="showDrawer()" size="large">
+          <n-icon>
+            <app-icon></app-icon>
+          </n-icon>
+        </n-button>
+      </n-space>
+    </n-grid-item>
   </n-grid>
+  <n-drawer v-model:show="active" :width="200" :placement="right">
+      <n-menu :options="menuOptions" indent="20"/>
+  </n-drawer>
 </template>
 <script>
 import { h, defineComponent } from 'vue'
@@ -32,7 +44,8 @@ import {
   TrophyOutline as TrophyIcon,
   InformationCircleOutline as InformationIcon,
   TerminalOutline as TerminalIcon,
-  LibraryOutline as LibraryIcon
+  LibraryOutline as LibraryIcon,
+  AppsSharp as AppIcon
 } from '@vicons/ionicons5'
 
 function renderIcon(icon) {
@@ -105,8 +118,12 @@ const menuOptions = [
 
 export default defineComponent( {
   name: 'NavBar',
+  components: {
+    AppIcon,
+  },
   data() {
     return {
+      active: false,
       activeKey: null,
       menuOptions: menuOptions
     }
@@ -117,6 +134,9 @@ export default defineComponent( {
     },
     onClickLoginButton() {
       this.$router.push({ name: 'Login' })
+    },
+    showDrawer() {
+      this.active = this.active ? false : true
     }
   }
 })

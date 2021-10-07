@@ -12,60 +12,60 @@ import { NTag, NButton, useMessage } from 'naive-ui'
 const createColumns = ({ sendMail }) => {
   return [
     {
-      title: 'Name',
+      title: '题目',
       key: 'name'
     },
     {
-      title: 'Age',
+      title: 'AC率',
       key: 'age'
     },
-    {
-      title: '地址',
-      key: 'address'
-    },
-    {
-      title: 'Tags',
-      key: 'tags',
-      render(row) {
-        const tags = row.tags.map((tagKey) => {
-          return h(
-            NTag,
-            {
-              style: {
-                marginRight: '6px'
-              },
-              type: 'info'
-            },
-            {
-              default: () => tagKey
-            }
-          )
-        })
-        return tags
-      }
-    },
-    {
-      title: 'Action',
-      key: 'actions',
-      render(row) {
-        return h(
-          NButton,
-          {
-            size: 'small',
-            onClick: () => sendMail(row)
-          },
-          { default: () => 'Send Email' }
-        )
-      }
-    }
+    // {
+    //   title: '地址',
+    //   key: 'address'
+    // },
+    // {
+    //   title: 'Tags',
+    //   key: 'tags',
+    //   render(row) {
+    //     const tags = row.tags.map((tagKey) => {
+    //       return h(
+    //         NTag,
+    //         {
+    //           style: {
+    //             marginRight: '6px'
+    //           },
+    //           type: 'info'
+    //         },
+    //         {
+    //           default: () => tagKey
+    //         }
+    //       )
+    //     })
+    //     return tags
+    //   }
+    // },
+    // {
+    //   title: 'Action',
+    //   key: 'actions',
+    //   render(row) {
+    //     return h(
+    //       NButton,
+    //       {
+    //         size: 'small',
+    //         onClick: () => sendMail(row)
+    //       },
+    //       { default: () => 'Send Email' }
+    //     )
+    //   }
+    // }
   ]
 }
 
 const createData = () => [
   {
     key: 0,
-    name: 'John Brown',
-    age: 32,
+    name: 'P1000 A+B Problem',
+    age: 39,
     address: 'New York No. 1 Lake Park',
     tags: ['nice', 'developer']
   },
