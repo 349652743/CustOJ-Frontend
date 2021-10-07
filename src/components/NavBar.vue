@@ -1,11 +1,11 @@
 <template>
-  <n-grid :cols="4" style="height: 100%;">
-    <n-grid-item :span="1" class="nav-left-item">
+  <n-grid :cols="4" style="height: 100%;" item-responsive>
+    <n-grid-item span="4 800:1" class="nav-left-item">
       <n-space style="width: 80%;">
-        <h2>长春理工大学在线评测系统</h2>
+        <n-h2 style="margin: 0px;">长春理工大学在线评测系统</n-h2>
       </n-space>
     </n-grid-item>
-    <n-grid-item :span="2" class="nav-middle-item">
+    <n-grid-item span="0 800:2" class="nav-middle-item">
       <n-menu
         v-model:value="activeKey"
         mode="horizontal"
@@ -14,7 +14,7 @@
         default-value="Home"
       />
     </n-grid-item>
-    <n-grid-item :span="1" class="nav-right-item">
+    <n-grid-item span="0 800:1" class="nav-right-item">
       <n-space style="width: 80%;" justify="end">
         <n-button @click="onClickLoginButton">登陆</n-button>
         <n-button @click="onClickRegisterButton">注册</n-button>

@@ -8,10 +8,12 @@
     "push": "vite build && scp -r dist/* root@159.75.37.48:/www"
   },
   "dependencies": {
-    "vue": "^3.2.16",
-    "vue-router": "^4.0.0-0",
+    "@vicons/ionicons5": "^0.11.0",
+    "lib-flexible": "^0.3.2",
     "naive-ui": "^2.16.5",
-    "@vicons/ionicons5": "^0.11.0"
+    "postcss-pxtorem": "^6.0.0",
+    "vue": "^3.2.16",
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.9.2",

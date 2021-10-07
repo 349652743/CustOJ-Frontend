@@ -4,7 +4,7 @@
       <n-layout-header bordered style="height: 64px;">
         <nav-bar></nav-bar>
       </n-layout-header>
-      <n-layout-content content-style="padding: 18px 80px;">
+      <n-layout-content content-style="padding: 18px 18px;">
         <router-view v-slot="{ Component }">
           <!-- <transition name="scale" mode="out-in"> -->
           <transition name="fade" mode="out-in">

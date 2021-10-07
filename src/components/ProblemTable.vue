@@ -20,7 +20,7 @@ const createColumns = ({ sendMail }) => {
       key: 'age'
     },
     {
-      title: 'Address',
+      title: '地址',
       key: 'address'
     },
     {
