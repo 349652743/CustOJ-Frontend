@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "push": "vite build && scp -r dist/* root@159.75.37.48:/www"
   },
   "dependencies": {
     "vue": "^3.2.16",
