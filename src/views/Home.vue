@@ -1,7 +1,7 @@
 <template>
   <div class="home" key="home">
-    <n-grid y-gap="12" x-gap="12" :cols="24">
-      <n-gi span="14">
+    <n-grid y-gap="12" x-gap="12" :cols="24" item-responsive>
+      <n-gi span="24 600:24 800:14">
         <n-space vertical>
           <n-card title="长春理工大学在线评测系统" :segmented="{ content: 'hard' }">
             <home-banner-box></home-banner-box>

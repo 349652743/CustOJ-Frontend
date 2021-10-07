@@ -40,7 +40,30 @@ const routes = [
   {
     path: '/contest/:id',
     name: 'Contest',
-    component: () => import('@/views/Contest.vue')
+    redirect: { name: 'ContestIntroduction' },
+    component: () => import('@/views/Contest.vue'),
+    children: [
+      {
+        path: '',
+        name: 'ContestIntroduction',
+        component: () => import('@/views/contest/ContestIntroduction.vue')
+      },
+      {
+        path: 'problems',
+        name: 'ContestProblems',
+        component: () => import('@/views/contest/ContestProblems.vue')
+      },
+      {
+        path: 'submissions',
+        name: 'ContestSubmissions',
+        component: () => import('@/views/contest/ContestSubmissions.vue')
+      },
+      {
+        path: 'notices',
+        name: 'ContestNotices',
+        component: () => import('@/views/contest/ContestNotices.vue')
+      }
+    ]
   }
 ]
 

@@ -1,37 +1,42 @@
 <template>
     <n-grid x-gap="12" :cols="24">
         <n-gi span="20">
-            <n-card>
-                <n-space vertical :size="20">
-                    <n-grid :cols="3" class="contest-title-item">
-                        <n-gi>
-                            <n-p style="text-align: left;">开始时间：2021-09-25 17:10:16</n-p>
-                        </n-gi>
-                        <n-gi>
-                            <n-h2 style="margin: 0px;text-align: center;">2021青岛大学ACM集训队选拔</n-h2>
-                        </n-gi>
-                        <n-gi>
-                            <n-p style="text-align: right;">结束时间：2021-09-25 17:10:16</n-p>
-                        </n-gi>
-                    </n-grid>
+            <n-space vertical>
+                <n-card>
+                    <n-space vertical :size="20">
+                        <n-grid :cols="3" class="contest-title-item">
+                            <n-gi>
+                                <n-p style="text-align: left;">开始时间：2021-09-25 17:10:16</n-p>
+                            </n-gi>
+                            <n-gi>
+                                <n-h2 style="margin: 0px;text-align: center;">2021青岛大学ACM集训队选拔</n-h2>
+                            </n-gi>
+                            <n-gi>
+                                <n-p style="text-align: right;">结束时间：2021-09-25 17:10:16</n-p>
+                            </n-gi>
+                        </n-grid>
 
-                    <n-progress
-                        type="line"
-                        :percentage="60"
-                        :indicator-placement="'inside'"
-                        status="success"
-                        processing
-                    />
-                    <n-grid x-gap="12" :cols="2" class="contest-title-item">
-                        <n-gi>
-                            <n-p  style="text-align: left;">持续时间: 21:26:59</n-p>
-                        </n-gi>
-                        <n-gi>
-                            <n-p style="text-align: right;">剩余时间: -12:32:51</n-p>
-                        </n-gi>
-                    </n-grid>
-                </n-space>
-            </n-card>
+                        <n-progress
+                            type="line"
+                            :percentage="60"
+                            :indicator-placement="'inside'"
+                            status="success"
+                            processing
+                        />
+                        <n-grid x-gap="12" :cols="2" class="contest-title-item">
+                            <n-gi>
+                                <n-p style="text-align: left;">持续时间: 21:26:59</n-p>
+                            </n-gi>
+                            <n-gi>
+                                <n-p style="text-align: right;">剩余时间: -12:32:51</n-p>
+                            </n-gi>
+                        </n-grid>
+                    </n-space>
+                </n-card>
+                <n-card>
+                    <router-view></router-view>
+                </n-card>
+            </n-space>
         </n-gi>
         <n-gi span="4">
             <n-card
@@ -53,11 +58,11 @@
 <script>
 import { defineComponent } from 'vue';
 import ContestMenu from '@/components/contest/ContestMenu.vue';
-
+import ContestProblems from './contest/ContestProblems.vue';
 export default defineComponent({
     data() {
         return {
-            test:""
+            test: ""
         }
     },
     components: {

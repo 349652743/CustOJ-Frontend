@@ -104,7 +104,7 @@ const menuOptions = [
 
 
 export default defineComponent( {
-  name: "NavBar",
+  name: 'NavBar',
   data() {
     return {
       activeKey: null,
