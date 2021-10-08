@@ -1,6 +1,6 @@
 <template>
-    <n-grid x-gap="12" :cols="24">
-        <n-gi span="20">
+    <n-grid x-gap="12" :cols="24" item-responsive>
+        <n-gi span="24 800:20">
             <n-space vertical>
                 <n-card>
                     <n-space vertical :size="20">
@@ -38,7 +38,7 @@
                 </n-card>
             </n-space>
         </n-gi>
-        <n-gi span="4">
+        <n-gi span="24 800:4">
             <n-card
                 class="contest-menu-card"
                 style="--padding-top: 0px;--padding-bottom: 0px;--padding-left: 0px;"
